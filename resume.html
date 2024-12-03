@@ -3,25 +3,231 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Melissa Sharon Lokoroma - Resume</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Apricot Color Palette */
+            --primary-color: #FFA07A;      /* Light Salmon (Apricot) */
+            --secondary-color: #FFE5B4;    /* Pale Apricot */
+            --accent-color: #FF7F50;       /* Coral */
+            --text-color: #333;
+            --background-color: #FFF5EE;   /* Seashell (soft apricot background) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Header and Navigation Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Main Content Styles */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        /* Skills Section */
+        .skills-section {
+            padding: 2rem;
+        }
+
+        .skills-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .skill {
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--text-color);
+        }
+
+        .bar {
+            width: 100%;
+            background-color: var(--secondary-color);
+            display: block;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .bar span {
+            height: 100%;
+            background-color: var(--primary-color);
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* CV Section */
+        .cv-section {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .cv-section h2 {
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .cv-item {
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--primary-color);
+            padding-left: 1rem;
+        }
+
+        .cv-item h3 {
+            color: var(--accent-color);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Skills</h1>
+        <h1>Resume</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section>
-            <div>HTML <span class="bar"><span style="width: 90%"></span></span></div>
-            <div>CSS <span class="bar"><span style="width: 80%"></span></span></div>
-            <div>Python <span class="bar"><span style="width: 75%"></span></span></div>
-            <div>JavaScript <span class="bar"><span style="width: 70%"></span></span></div>
+
+    <div class="container">
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <h2>Professional Skills</h2>
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="bar"><span style="width: 90%"></span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="bar"><span style="width: 80%"></span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="bar"><span style="width: 75%"></span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="bar"><span style="width: 70%"></span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">WordPress</div>
+                <div class="bar"><span style="width: 65%"></span></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">UI/UX Design</div>
+                <div class="bar"><span style="width: 60%"></span></div>
+            </div>
         </section>
-    </main>
+
+        <!-- CV Section -->
+        <section class="cv-section" id="cv">
+            <h2>Professional Experience</h2>
+            <div class="cv-item">
+                <h3>Web Developer</h3>
+                <p>Tech Solutions Inc. | 2021 - Present</p>
+                <p>Developed responsive web applications and maintained robust web infrastructure.</p>
+            </div>
+            <div class="cv-item">
+                <h3>Junior Frontend Developer</h3>
+                <p>Digital Innovations LLC | 2019 - 2021</p>
+                <p>Collaborated on creating intuitive user interfaces and implementing modern web technologies.</p>
+            </div>
+            <div class="cv-item">
+                <h3>Freelance Web Designer</h3>
+                <p>Freelance | 2017 - 2019</p>
+                <p>Provided custom web design and development services for various clients.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Melissa. All rights reserved.</p>
+        <p>&copy; 2024 Melissa Sharon Lokoroma. All rights reserved.</p>
     </footer>
 </body>
-<script src="js/scripts.js"></script>
-
 </html>
