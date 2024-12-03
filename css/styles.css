@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6;
+    color: #8c4d00;
+}
+
+header, footer {
+    background-color: #ffcc99;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.testimonial-cards {
+    display: flex;
+    overflow: hidden;
+}
+
+.card {
+    flex: 1;
+    min-width: 100%;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.services {
+    text-align: center;
+    background-color: #fff0e0;
+    padding: 20px;
+}
+
+.service-card {
+    background-color: #ffe5cc;
+    border: 1px solid #ffcc99;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    color: #8c4d00;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #4d2600;
+    font-size: 0.9em;
+    line-height: 1.5;
+}

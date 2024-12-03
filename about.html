@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Melissa Sharon Lokoroma</title>
+    <style>
+        /* CSS Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Apricot Color Palette */
+            --primary-color: #FFA07A;      /* Light Salmon (Apricot) */
+            --secondary-color: #FFE5B4;    /* Pale Apricot */
+            --accent-color: #FF7F50;       /* Coral */
+            --text-color: #333;
+            --background-color: #FFF5EE;   /* Seashell (soft apricot background) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Navigation Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* About Section */
+        .about-section {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            background-color: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            flex-shrink: 0;
+        }
+
+        .about-content {
+            flex-grow: 1;
+        }
+
+        .about-content h2 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .tech-skills {
+            margin-top: 1rem;
+        }
+
+        .tech-skills h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            padding: 0.25rem 0.5rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        /* Hobbies Section */
+        .hobbies-section {
+            margin-top: 2rem;
+            background-color: white;
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .hobbies-section h2 {
+            color: var(--accent-color);
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .hobbies-list {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .hobby-item {
+            text-align: center;
+            color: var(--text-color);
+        }
+
+        .hobby-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                margin-bottom: 1rem;
+            }
+
+            .hobbies-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <img src="/images/Mpenzi.jpg" alt="Melissa" class="profile-image">
+            <div class="about-content">
+                <h2>Hello! I'm Melissa Sharon Lokoroma</h2>
+                <p>I'm a passionate and innovative web developer with a deep love for creating elegant, functional digital solutions. My journey in technology is driven by curiosity, creativity, and a constant desire to learn and grow. I specialize in transforming complex ideas into user-friendly web experiences that not only look great but also provide seamless functionality.</p>
+                
+                <div class="tech-skills">
+                    <h3>Tech Skills</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Responsive Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="hobbies-section">
+            <h2>My Hobbies</h2>
+            <div class="hobbies-list">
+                <div class="hobby-item">
+                    <div class="hobby-icon">👗</div>
+                    <p>Fashion</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">📸</div>
+                    <p>Modelling</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">💃</div>
+                    <p>Dancing</p>
+                </div>
+                <div class="hobby-item">
+                    <div class="hobby-icon">📖</div>
+                    <p>Reading</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Melissa Sharon Lokoroma. All rights reserved.</p>
+    </footer>
+</body>
+</html>
