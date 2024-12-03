@@ -3,12 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Services</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Melissa Sharon Lokoroma - Services</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Apricot Color Palette */
+            --primary-color: #FFA07A;      /* Light Salmon (Apricot) */
+            --secondary-color: #FFE5B4;    /* Pale Apricot */
+            --accent-color: #FF7F50;       /* Coral */
+            --text-color: #333;
+            --background-color: #FFF5EE;   /* Seashell (soft apricot background) */
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: var(--background-color);
+            color: var(--text-color);
+        }
+
+        /* Navigation Styles */
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Main Content Styles */
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 20px;
+        }
+
+        /* Services Section Styles */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .services h2 {
+            grid-column: 1 / -1;
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        /* Skills Section */
+        .skills {
+            margin-top: 2rem;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .skills h2 {
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .skill-label {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .skill-bar {
+            background-color: var(--secondary-color);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .skill-percentage {
+            height: 20px;
+            background-color: var(--accent-color);
+            border-radius: 10px;
+        }
+
+        /* Resume Section */
+        .resume {
+            margin-top: 2rem;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .resume h2 {
+            text-align: center;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+        }
+
+        .resume-section {
+            margin-bottom: 1rem;
+        }
+
+        .resume-section h3 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Services</h1>
+        <h1>Welcome to My Portfolio</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -19,6 +205,7 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="services">
             <h2>What I Offer</h2>
@@ -47,11 +234,76 @@
                 <p>Need help troubleshooting or optimizing your website? I offer technical support services to keep your projects running smoothly.</p>
             </div>
         </section>
+
+        <section class="skills">
+            <h2>My Skills</h2>
+            <div class="skill-container">
+                <div class="skill-label">HTML</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-label">CSS</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-label">Python</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-label">JavaScript</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-label">WordPress</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-label">UI/UX</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-label">Others</div>
+                <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 60%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="resume">
+            <h2>Resume Highlights</h2>
+            <div class="resume-section">
+                <h3>Professional Experience</h3>
+                <p>Experienced web developer with a passion for creating innovative digital solutions. Proven track record of delivering high-quality projects across various platforms and technologies.</p>
+            </div>
+            <div class="resume-section">
+                <h3>Education</h3>
+                <p>Bachelor's Degree in Computer Science, Specialization in Web Technologies and Design</p>
+            </div>
+            <div class="resume-section">
+                <h3>Certifications</h3>
+                <p>
+                    - Web Development Professional Certification
+                    - UI/UX Design Specialization
+                    - Advanced JavaScript Techniques
+                </p>
+            </div>
+        </section>
     </main>
+
     <footer>
         <p>&copy; 2024 Melissa. All rights reserved.</p>
     </footer>
 </body>
-<script src="js/scripts.js"></script>
-
 </html>
